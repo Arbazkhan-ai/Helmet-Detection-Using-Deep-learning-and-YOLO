@@ -118,7 +118,7 @@ dataset/
         </pre>
 
         <h2>📷 Demo</h2>
-        <img src="D:\deep learning\Helmet detection\demo.jpg" alt="Helmet Detection Demo">
+        <img src="demo.jpg" alt="Helmet Detection Demo">
 
         <h2>💡 Contributing</h2>
         <p>Contributions are welcome! Please open an issue or submit a pull request for improvements.</p>
@@ -126,7 +126,9 @@ dataset/
         <h2>⚡ License</h2>
         <p>This project is licensed under the MIT License.</p>
 
-        <p style="text-align:center;"><a href="https://github.com/Arbazkhan-ai/Helmet-Detection-Using-Deep-learning-and-YOLO" class="button">View on GitHub</a></p>
+        <p style="text-align:center;">
+            <a href="https://github.com/Arbazkhan-ai/Helmet-Detection-Using-Deep-learning-and-YOLO" class="button">View on GitHub</a>
+        </p>
     </div>
 </body>
 </html>
