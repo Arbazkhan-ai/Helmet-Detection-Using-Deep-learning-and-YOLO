@@ -8,6 +8,14 @@ Real-time Helmet Detection system using Deep Learning and YOLO. Detects helmets 
 - Fast and accurate object detection using YOLOv8
 - Displays bounding boxes and confidence scores
 
+## Dataset Structure
+dataset/
+├─ train/
+├─ valid/
+├─ test/
+└─ data.yaml
+
+
 ## Installation
 ```bash
 # Clone the repo
@@ -41,10 +49,3 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-
-#Dataset Structure
-dataset/
-├─ train/
-├─ valid/
-├─ test/
-└─ data.yaml
