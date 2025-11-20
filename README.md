@@ -118,7 +118,7 @@ dataset/
         </pre>
 
         <h2>📷 Demo</h2>
-        <img src="images/demo.png" alt="Helmet Detection Demo">
+        <img src="demo.jpg" alt="Helmet Detection Demo">
 
         <h2>💡 Contributing</h2>
         <p>Contributions are welcome! Please open an issue or submit a pull request for improvements.</p>
