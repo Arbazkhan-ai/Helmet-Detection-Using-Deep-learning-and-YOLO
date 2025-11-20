@@ -10,6 +10,7 @@
             background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
+            margin: 0;
             padding: 20px;
         }
         h1, h2 {
@@ -24,23 +25,20 @@
             border-radius: 10px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
-        code {
-            background-color: #eee;
-            padding: 3px 6px;
-            border-radius: 4px;
-            font-size: 0.95em;
-        }
         pre {
             background-color: #eee;
             padding: 15px;
             border-radius: 5px;
             overflow-x: auto;
         }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            display: block;
-            margin: 10px auto;
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        ul {
+            margin-left: 20px;
         }
         a.button {
             display: inline-block;
@@ -55,8 +53,11 @@
         a.button:hover {
             background-color: #0650a4;
         }
-        ul {
-            margin-left: 20px;
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 15px auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -95,8 +96,10 @@ model.train(data="dataset/data.yaml", epochs=50, imgsz=640)
 # Run live helmet detection
 import cv2
 from ultralytics import YOLO
+
 model = YOLO("runs/detect/train/weights/best.pt")
 cap = cv2.VideoCapture(0)
+
 while True:
     ret, frame = cap.read()
     if not ret: break
@@ -104,6 +107,7 @@ while True:
     annotated = results[0].plot()
     cv2.imshow("Helmet Detection", annotated)
     if cv2.waitKey(1) & 0xFF == ord('q'): break
+
 cap.release()
 cv2.destroyAllWindows()
         </pre>
@@ -118,7 +122,7 @@ dataset/
         </pre>
 
         <h2>📷 Demo</h2>
-        <img src="demo.jpg" alt="Helmet Detection Demo">
+        <img src="Helmet detection\demo.jpg" alt="Helmet Detection Demo">
 
         <h2>💡 Contributing</h2>
         <p>Contributions are welcome! Please open an issue or submit a pull request for improvements.</p>
